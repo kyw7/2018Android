@@ -6,10 +6,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class newsFragment  extends Fragment{
+/**
+ * Created by 16911 on 2018/06/12.
+ */
+
+public class buttomFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
-        View view = inflater.inflate(R.layout.adopt_fragment,container,false);
+        View view = inflater.inflate(R.layout.buttom,container,false);
         return view;
     }
 }
