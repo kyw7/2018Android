@@ -62,7 +62,6 @@
             android:layout_gravity="center"
             android:background="#FFFFFF"
             android:hint="password"
-            android:password="true"
             android:maxLines="1"/>
 
     </android.support.v7.widget.CardView>
