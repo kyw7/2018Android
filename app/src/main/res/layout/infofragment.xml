@@ -1,8 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="360dp"
+    android:layout_height="475dp"
+    android:background="@color/backgroud"
     >
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/login_icon_info"/>
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_icon_info"
+        android:fontFamily="serif"
+        android:layout_centerHorizontal="true"
+        android:text="AnimalHelper"
+        android:textSize="24sp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/title_info"/>
+
+    <Button
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:text="about us"
+        android:textSize="24dp"
+        android:fontFamily="serif"
+        android:paddingLeft="15dp"
+        android:drawableLeft="@drawable/info2"
+        android:textAllCaps="false"
+        android:background="@drawable/button_sele"
+        android:alpha="0.5"
+        android:paddingRight="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/title_info"
+        android:layout_marginTop="50dp"
+        android:id="@+id/about_us_info"
+        />
+
+    <Button
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:text="contact us"
+        android:textSize="24dp"
+        android:paddingRight="15dp"
+        android:fontFamily="serif"
+        android:paddingLeft="15dp"
+        android:drawableLeft="@drawable/message"
+        android:textAllCaps="false"
+        android:background="@drawable/button_sele"
+        android:alpha="0.5"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/about_us_info"
+        android:layout_marginTop="50dp"
+        android:id="@+id/contact_us"
+        />
+
+
+</RelativeLayout>
