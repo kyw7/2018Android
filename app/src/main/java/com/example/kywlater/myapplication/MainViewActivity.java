@@ -17,6 +17,9 @@ public class MainViewActivity extends AppCompatActivity implements View.OnClickL
         findViewById(R.id.adopt_button).setOnClickListener(this);
         findViewById(R.id.info_button).setOnClickListener(this);
         findViewById(R.id.mypets_button).setOnClickListener(this);
+//        TextView textView=findViewById(R.id.info_head_text);
+//        Typeface typeface=Typeface.createFromAsset(getAssets(), "fonts/purimonyorori2.ttf");
+//        textView.setTypeface(typeface);
 
     }
 
@@ -75,20 +78,20 @@ public class MainViewActivity extends AppCompatActivity implements View.OnClickL
         Button info=findViewById(R.id.info_button);
         Button mype=findViewById(R.id.mypets_button);
         Button adopt=findViewById(R.id.adopt_button);
-        info.setBackgroundColor(Color.rgb(130,254, 142));
-        mype.setBackgroundColor(Color.rgb(130,254,142));
-        adopt.setBackgroundColor(Color.rgb(130,254,142));
+        info.setTextColor(Color.rgb(130,254, 142));
+        mype.setTextColor(Color.rgb(130,254,142));
+        adopt.setTextColor(Color.rgb(130,254,142));
         switch(i){
             case -1:
-                mype.setBackgroundColor(Color.rgb(243,93,93));
+                mype.setTextColor(Color.rgb(243,93,93));
 
                 break;
             case 0:
 
-                adopt.setBackgroundColor(Color.rgb(243,93,93));
+                adopt.setTextColor(Color.rgb(243,93,93));
                 break;
             case 1:
-                info.setBackgroundColor(Color.rgb(243,93,93));
+                info.setTextColor(Color.rgb(243,93,93));
                 break;
             default:
                 break;

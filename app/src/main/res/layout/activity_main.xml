@@ -18,10 +18,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/login_icon"
-        android:fontFamily="serif"
+        android:fontFamily="@font/disko"
         android:layout_centerHorizontal="true"
         android:text="AnimalHelper"
-        android:textSize="24sp"
+        android:textSize="36sp"
         android:layout_marginTop="20dp"
         android:id="@+id/title"/>
 
@@ -70,7 +70,8 @@
     <Button
         android:layout_width="280dp"
         android:layout_height="50dp"
-        android:text="submit"
+        android:text="Submit"
+        android:textAllCaps="false"
         android:background="@drawable/button_sele"
         android:alpha="0.5"
         android:layout_centerHorizontal="true"
