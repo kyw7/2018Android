@@ -8,9 +8,10 @@
         android:layout_height="70dp"
         android:layout_width="360dp"
         android:layout_centerHorizontal="true"
-        app:cardBackgroundColor="#FFFFFF"
+        app:cardBackgroundColor="@color/backgroud"
         android:id="@+id/buttom_cardview"
-        android:alpha="0.5">
+        android:alpha="0.5"
+        >
 
         <Button
             android:layout_width="120dp"
@@ -21,13 +22,14 @@
             android:textAllCaps="false"
             android:textSize="24sp"
             android:fontFamily="serif"
-            android:layout_gravity="left"/>
+            android:layout_gravity="left"
+            />
 
         <Button
             android:layout_width="120dp"
             android:layout_height="match_parent"
             android:id="@+id/adopt_button"
-            android:background="@color/button_0.5"
+            android:background="@color/button_press"
             android:text="Adopt"
             android:layout_gravity="center"
             android:textAllCaps="false"
