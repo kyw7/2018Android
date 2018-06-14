@@ -40,6 +40,7 @@
             android:id="@+id/account"
             android:layout_gravity="center"
             android:background="#FFFFFF"
+            android:scrollHorizontally="true"
             android:hint="account"
             android:maxLines="1"/>
 
@@ -55,12 +56,13 @@
         app:cardCornerRadius="10dp"
         android:id="@+id/cart_password"
         >
-        <EditText
+        <com.example.kywlater.myapplication.passwordEditText
             android:layout_width="280dp"
             android:layout_height="30dp"
             android:id="@+id/password"
             android:layout_gravity="center"
             android:background="#FFFFFF"
+            android:inputType="textPassword"
             android:hint="password"
             android:maxLines="1"/>
 

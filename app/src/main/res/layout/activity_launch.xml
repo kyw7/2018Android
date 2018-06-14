@@ -1,15 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.kywlater.myapplication.launch">
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/po"
+        />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="fdsaf"/>
+        android:fontFamily="@font/disko"
+        android:textSize="32dp"
+        android:text="animal"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="50dp"/>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/disko"
+        android:textSize="32dp"
+        android:text="are"
+        android:layout_marginTop="350dp"
+        android:layout_marginLeft="50dp"
+        />
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:fontFamily="@font/disko"
+        android:text="our friend"
+        android:layout_marginTop="400dp"
+        android:layout_marginLeft="50dp"
+        android:textSize="32dp" />
+</RelativeLayout>

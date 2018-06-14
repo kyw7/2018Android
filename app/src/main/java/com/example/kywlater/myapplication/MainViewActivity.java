@@ -17,9 +17,6 @@ public class MainViewActivity extends AppCompatActivity implements View.OnClickL
         findViewById(R.id.adopt_button).setOnClickListener(this);
         findViewById(R.id.info_button).setOnClickListener(this);
         findViewById(R.id.mypets_button).setOnClickListener(this);
-//        TextView textView=findViewById(R.id.info_head_text);
-//        Typeface typeface=Typeface.createFromAsset(getAssets(), "fonts/purimonyorori2.ttf");
-//        textView.setTypeface(typeface);
 
     }
 
