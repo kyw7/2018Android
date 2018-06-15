@@ -3,7 +3,15 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="360dp"
     android:layout_height="475dp"
-    android:background="@color/backgroud">
+    android:background="@color/backgroud"
+    android:id="@+id/fragment_adopt">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/adoptinfo">
+
+    </android.support.v7.widget.RecyclerView>
 
 
 </android.support.constraint.ConstraintLayout>

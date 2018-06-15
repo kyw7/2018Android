@@ -62,7 +62,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                         String responseData = response.body().string();
                         Log.d("data", responseData);
                         //Log.d("data", "对吗？");
-                        parseJSONWithGSON(responseData);
+                        //parseJSONWithGSON(responseData);
                         //Gson gson = new Gson();
                         //Person person = gson.fromJson(responseData,Person.class);
                         //Log.d("data", person.getName());

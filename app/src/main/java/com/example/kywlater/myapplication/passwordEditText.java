@@ -68,6 +68,7 @@ public class passwordEditText extends android.support.v7.widget.AppCompatEditTex
                 if (swi == true) {
                     this.setCompoundDrawablesWithIntrinsicBounds(null, null, drawable2, null);
                     swi = false;
+                    Log.d("sa","cannot");
                     this.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
                 } else {
                     this.setCompoundDrawablesWithIntrinsicBounds(null, null, drawable, null);
