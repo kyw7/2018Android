@@ -11,7 +11,7 @@
         android:layout_centerHorizontal="true"
         app:cardBackgroundColor="#FFFFFF"
         android:id="@+id/buttom_cardview"
-        android:alpha="0.5">
+        >
 
 
         <com.example.kywlater.myapplication.serchEditText

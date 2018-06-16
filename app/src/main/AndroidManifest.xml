@@ -23,7 +23,8 @@
         </activity>
         <activity android:name=".adopt_more_info" />
         <activity android:name=".adopt_accept" />
-        <activity android:name=".contact_us"></activity>
+        <activity android:name=".contact_us" />
+        <activity android:name=".about_us"></activity>
     </application>
 
 </manifest>

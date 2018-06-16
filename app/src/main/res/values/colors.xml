@@ -4,8 +4,9 @@
     <color name="colorPrimaryDark">#000000</color>
     <color name="colorAccent">#FF4081</color>
     <color name="pureBlue">#000000</color>
-    <color name="backgroud">#F7F8EB</color>
+    <color name="backgroud">#81C784</color>
     <color name="button_0.5">#82FE8E</color>
     <color name="button_press">#F35D5D</color>
     <color name="whiteb">#FFFFFF</color>
+    <color name="s">#F7F8EB</color>
 </resources>
