@@ -13,6 +13,7 @@ import java.util.List;
 
 public class MainViewActivity extends AppCompatActivity implements View.OnClickListener {
     private int button_count=0;
+
     private List<animal> animals=new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +23,9 @@ public class MainViewActivity extends AppCompatActivity implements View.OnClickL
         findViewById(R.id.adopt_button).setOnClickListener(this);
         findViewById(R.id.info_button).setOnClickListener(this);
         findViewById(R.id.mypets_button).setOnClickListener(this);
+
+
+
        // findViewById(R.id.contact_us).setOnClickListener(this);
 
 

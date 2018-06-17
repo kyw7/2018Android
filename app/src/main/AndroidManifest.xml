@@ -13,7 +13,10 @@
         android:theme="@style/AppTheme">
         <activity android:name=".LoginActivity" />
         <activity android:name=".RegisterActivity" />
-        <activity android:name=".MainViewActivity" />
+        <activity android:name=".MainViewActivity"
+            android:windowSoftInputMode="adjustPan"/>
+
+
         <activity android:name=".launch">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
