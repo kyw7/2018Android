@@ -1,81 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/backgroud">
+    android:orientation="vertical">
 
-    <fragment
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:name="com.example.kywlater.myapplication.head_adopt_fragment"
-        android:id="@+id/info_f">
 
-    </fragment>
     <ImageView
-        android:layout_width="360dp"
-        android:layout_height="180dp"
         android:id="@+id/big_pic"
-        android:layout_below="@id/info_f"/>
+        android:layout_width="match_parent"
+        android:background="@drawable/doge"
+        android:layout_height="360dp"
+        android:paddingTop="5dp"
+        />
 
-    <android.support.v7.widget.CardView
-        android:layout_width="150dp"
-        android:layout_height="75dp"
-        android:layout_below="@id/big_pic"
-        android:layout_marginTop="50dp"
-        android:layout_marginLeft="20dp"
-        android:background="@color/backgroud"
-        android:clickable="true"
-        android:id="@+id/adopt_yes">
-        <ImageView
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:layout_marginTop="2.5dp"
-            android:src="@drawable/adopt_ok"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Adopt"
-            android:layout_marginLeft="70dp"
-            android:layout_marginTop="20dp"
-            android:textSize="24sp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:orientation="horizontal">
 
-    </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:id="@+id/adopt_yes"
+            android:layout_width="150dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:background="@color/backgroud"
+            android:clickable="true"
+            app:cardCornerRadius="20dp">
 
-    <android.support.v7.widget.CardView
-        android:layout_width="150dp"
-        android:layout_height="75dp"
-        android:background="@color/backgroud"
-        android:layout_below="@id/big_pic"
-        android:layout_marginTop="50dp"
-        android:layout_toRightOf="@id/adopt_yes"
-        android:layout_marginLeft="20dp"
-        android:clickable="true"
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:paddingStart="10dp"
+                android:src="@drawable/adopt_ok" />
 
-        >
-        <ImageView
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:layout_marginTop="2.5dp"
-            android:src="@drawable/back"
-            />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="20dp"
+                android:text="Adopt"
+                android:textSize="24sp" />
+        </android.support.v7.widget.CardView>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="24dp"
-            android:text="Back"
-            android:layout_marginLeft="70dp"
-            android:layout_marginTop="20dp"/>
-    </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:background="@color/backgroud"
+            android:clickable="true"
+            app:cardCornerRadius="20dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:paddingStart="10dp"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="20dp"
+                android:text="Back"
+                android:textSize="23dp" />
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
 
     <TextView
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/adopt_yes"
+        android:id="@+id/animal_detail"
+        android:layout_marginStart="30dp"
         android:layout_marginTop="30dp"
-        android:textSize="16dp"
         android:text="fdsagdcccccccccccccccccccccccccccccccccccccccccccc"
-        android:layout_marginLeft="30dp"/>
+        android:textSize="16dp" />
 
-</RelativeLayout>
+</LinearLayout>

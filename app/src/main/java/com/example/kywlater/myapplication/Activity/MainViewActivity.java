@@ -1,4 +1,4 @@
-package com.example.kywlater.myapplication;
+package com.example.kywlater.myapplication.Activity;
 
 import android.content.Intent;
 import android.graphics.Color;
@@ -8,13 +8,17 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
-import java.util.ArrayList;
-import java.util.List;
+import com.example.kywlater.myapplication.R;
+import com.example.kywlater.myapplication.Fragment.AdoptFragment;
+import com.example.kywlater.myapplication.contact_us;
+import com.example.kywlater.myapplication.head_adopt_harder_fragment;
+import com.example.kywlater.myapplication.head_info_fragment;
+import com.example.kywlater.myapplication.headmypets_fragment;
+import com.example.kywlater.myapplication.Fragment.infoFragment;
+import com.example.kywlater.myapplication.Fragment.mypetsFragment;
 
 public class MainViewActivity extends AppCompatActivity implements View.OnClickListener {
     private int button_count=0;
-
-    private List<animal> animals=new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,22 +27,8 @@ public class MainViewActivity extends AppCompatActivity implements View.OnClickL
         findViewById(R.id.adopt_button).setOnClickListener(this);
         findViewById(R.id.info_button).setOnClickListener(this);
         findViewById(R.id.mypets_button).setOnClickListener(this);
-
-
-
-       // findViewById(R.id.contact_us).setOnClickListener(this);
-
-
     }
 
-    public void init(){
-        int i=0;
-        for(;i<12;i=i+1){
-            animal sanimal=new animal(12,"large","husky",R.drawable.doge,"fdas");
-            animals.add(sanimal);
-        }
-
-    }
     @Override
     public void onClick(View view) {
         switch(view.getId()){
@@ -58,7 +48,7 @@ public class MainViewActivity extends AppCompatActivity implements View.OnClickL
 
                 }else {
                     replaceTopFragment(new head_adopt_harder_fragment());
-                    replaceMiddFragment(new adoptFragment());
+                    replaceMiddFragment(new AdoptFragment());
                     pressdButton(0);
                     button_count=0;
                 }
@@ -120,6 +110,6 @@ public class MainViewActivity extends AppCompatActivity implements View.OnClickL
     }
     private void fragmentinit(){
         replaceTopFragment(new head_adopt_harder_fragment());
-        replaceMiddFragment(new adoptFragment());
+        replaceMiddFragment(new AdoptFragment());
     }
 }

@@ -1,9 +1,11 @@
-package com.example.kywlater.myapplication;
+package com.example.kywlater.myapplication.Activity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+
+import com.example.kywlater.myapplication.R;
 
 public class RegisterActivity extends AppCompatActivity implements View.OnClickListener {
 

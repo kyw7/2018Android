@@ -9,7 +9,7 @@
     <fragment
         android:layout_width="wrap_content"
         android:layout_height="70dp"
-        android:name="com.example.kywlater.myapplication.head_adopt_fragment"
+        android:name="com.example.kywlater.myapplication.Activity.HeadAdoptFragment"
         android:layout_alignParentTop="true"
         android:id="@+id/needinaccept"
         >

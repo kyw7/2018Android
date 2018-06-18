@@ -11,12 +11,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".RegisterActivity" />
-        <activity android:name=".MainViewActivity"
-            android:windowSoftInputMode="adjustPan"/>
-
-
+        <activity android:name=".Activity.LoginActivity" />
+        <activity android:name=".Activity.RegisterActivity" />
+        <activity
+            android:name=".Activity.MainViewActivity"
+            android:windowSoftInputMode="adjustPan" />
         <activity android:name=".launch">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,10 +23,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".adopt_more_info" />
         <activity android:name=".adopt_accept" />
         <activity android:name=".contact_us" />
-        <activity android:name=".about_us"></activity>
+        <activity android:name=".about_us" />
+        <activity android:name=".Activity.AdoptMoreInfoActivity" />
+        <activity
+            android:name=".Activity.MainTestActivity"
+            android:label="@string/title_activity_main_test"></activity>
     </application>
 
 </manifest>

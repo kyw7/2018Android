@@ -1,4 +1,4 @@
-package com.example.kywlater.myapplication;
+package com.example.kywlater.myapplication.Fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,6 +7,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+
+import com.example.kywlater.myapplication.R;
+import com.example.kywlater.myapplication.about_us;
+import com.example.kywlater.myapplication.contact_us;
 
 public class infoFragment extends Fragment {
     @Override
