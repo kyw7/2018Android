@@ -51,6 +51,8 @@ public class AdoptFragment extends Fragment implements SwipeRefreshLayout.OnRefr
 
     @Override
     public void onRefresh() {
+        AnimalHelper.setAdapter(adapter);
+        AnimalHelper.setActivity(getActivity());
         Toast.makeText(getContext(), "Refresh Finished!", Toast.LENGTH_SHORT).show();
         Log.d("haha", "onRefresh: "+animalsList.size());
         adapter.notifyDataSetChanged();

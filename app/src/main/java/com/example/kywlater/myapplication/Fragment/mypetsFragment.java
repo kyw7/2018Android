@@ -49,9 +49,11 @@ public class mypetsFragment extends Fragment implements SwipeRefreshLayout.OnRef
 
     @Override
     public void onRefresh() {
+        AnimalHelper.setAdapter(adapter);
+        AnimalHelper.setActivity(getActivity());
+        AnimalHelper.initForMyAnimals(animalsList);
         Toast.makeText(getContext(), "Refresh Finished!", Toast.LENGTH_SHORT).show();
         Log.d("haha", "onRefresh: "+animalsList.size());
-        adapter.notifyDataSetChanged();
         //添加代码
         swipeRefreshLayout.setRefreshing(false);
     }

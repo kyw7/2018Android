@@ -1,8 +1,10 @@
 package com.example.kywlater.myapplication.tools;
 
+import android.support.v4.app.FragmentActivity;
 import android.util.Log;
 
 import com.example.kywlater.myapplication.Activity.LoginActivity;
+import com.example.kywlater.myapplication.Adapter.AnimalAdapter;
 import com.example.kywlater.myapplication.entity.adopt;
 import com.example.kywlater.myapplication.entity.animal;
 import com.example.kywlater.myapplication.http.HttpUtil;
@@ -19,7 +21,10 @@ import okhttp3.Call;
 import okhttp3.Response;
 
 public class AnimalHelper {
+    private static AnimalAdapter adapter;
     public static String result;
+    private static FragmentActivity activity;
+
     public static void initForAll(final List<animal> animalsList) {
         animalsList.clear();
         String url = "http://118.25.8.154/tp5/public/index/animal/getall";
@@ -47,6 +52,14 @@ public class AnimalHelper {
                     animal animalBean = gson.fromJson(ani, animal.class);
                     // Log.d("data", animalBean.getimageid());
                     animalsList.add(animalBean);
+                }
+                if (adapter != null && activity != null) {
+                    activity.runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            adapter.notifyDataSetChanged();
+                        }
+                    });
                 }
             }
         });
@@ -79,6 +92,14 @@ public class AnimalHelper {
                     // Log.d("data", animalBean.getimageid());
                     animalsList.add(animalBean);
                 }
+                if (adapter != null && activity != null) {
+                    activity.runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            adapter.notifyDataSetChanged();
+                        }
+                    });
+                }
             }
         });
     }
@@ -98,5 +119,13 @@ public class AnimalHelper {
             }
         });
         return result;
+    }
+
+    public static void setAdapter(AnimalAdapter adapter) {
+        AnimalHelper.adapter = adapter;
+    }
+
+    public static void setActivity(FragmentActivity activity) {
+        AnimalHelper.activity = activity;
     }
 }
